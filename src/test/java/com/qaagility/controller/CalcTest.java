@@ -27,13 +27,14 @@ public class CalcTest {
       public void testCalc1() {
         assertEquals("Result - Fail", 9, 9);
       }
-	
+	@Test
+	public void testCalc2(){
 	Calcmul testcalcmul= new Calcmul();
-	Calculator testcalculator =new Calculator();
+	Calculator testcalculator= new Calculator();
 
 	assertEquals(testcalcmul.mul(),18);
 	assertEquals(testcalculator.add(),9);
 	assertEquals(testcalculator.add(20,20),40);
 	assertEquals(testcalculator.add(25,20),45);
-
+	}
     }
